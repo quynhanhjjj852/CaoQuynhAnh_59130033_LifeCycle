@@ -1,0 +1,9 @@
+Câu 4: Các phương thức vòng đời được gọi khi ứng dụng đang chạy và người sử dụng bấm vào nút back là
+       onPause, onStop, onDestroy, sau đó mở lại ứng dụng thì các phương thức onCreater, onStart, onResume được gọi.
+
+Câu 5: Các phương thức vòng đời được gọi khi ứng dụng đang chạy và người sử dụng bấm vào nút home là
+       onPause, onStop, sau đó mở lại ứng dụng thì các phương thức onStart, onRestart, onResume được gọi.
+
+Câu 6: Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng khi chạy
+       lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời onPause.
+       Vì trước khi ứng dụng bị hủy bỏ thì phải thực hiện phương thức onPause để đủ điều kiện.
