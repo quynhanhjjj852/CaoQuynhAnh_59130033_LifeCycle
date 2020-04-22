@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void  onPause(){
-        super.onPause(();
+        super.onPause();
         Log.d("LifeCycle", "onPause( called");
         Toast.makeText(getApplicationContext(), "onCreate", Toast.LENGTH_SHORT).show();
     }
