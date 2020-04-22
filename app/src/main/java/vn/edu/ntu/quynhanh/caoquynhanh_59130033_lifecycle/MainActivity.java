@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -17,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Log.d("LifeCycle", "onCreate called");
+        Toast.makeText(getApplicationContext(), ".....", Toast.LENGTH_SHORT).show();
         txtTime = findViewById(R.id.txtTime);
         SimpleDateFormat spf = new SimpleDateFormat("HH:mm:ss");
         String strDate = spf.format(new Date());
